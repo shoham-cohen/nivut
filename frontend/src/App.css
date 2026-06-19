@@ -1,0 +1,49 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100%;
+}
+
+.app__header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  flex: 0 0 auto;
+}
+
+.app__title {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-h);
+}
+
+.app__subtitle {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.app__main {
+  position: relative;
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+/* The Leaflet map must fill its container on desktop and mobile. */
+.map-view {
+  height: 100%;
+  width: 100%;
+  background: #f0efe9;
+}
+
+@media (max-width: 600px) {
+  .app__header {
+    padding: 10px 12px;
+  }
+  .app__title {
+    font-size: 18px;
+  }
+}
