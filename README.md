@@ -60,53 +60,5 @@ npm run dev
 Open the printed local URL. The app renders a sample topographic map with
 zoom/pan enabled. Works on desktop and mobile browsers.
 
-## Roadmap (Epics → Tasks)
 
-### 1. Project Setup
-- [x] Vite + React + TypeScript scaffold
-- [x] Install/configure Leaflet
-- [x] Folder structure (components, hooks, utils, services, types)
-- [x] README with project vision
 
-### 2. Map Rendering Module
-- [x] Render base map with zoom/pan (`CRS.Simple`)
-- [x] Overlay sample topographic image
-- [ ] Support loading a custom map image (upload / URL)
-- [ ] Persist last-used map config
-
-### 3. Drawing Tool (Polyline)
-- [ ] Click to add path vertices
-- [ ] Render the planned polyline
-- [ ] Draggable / editable vertices
-- [ ] Snap and distance readout
-
-### 4. Route Storage System
-- [ ] Save route as JSON (coordinates relative to map)
-- [ ] Export route to file
-- [ ] Backend-ready storage interface (already stubbed in `routeStorage`)
-
-### 5. Route Loading System
-- [ ] List saved routes
-- [ ] Load a route back onto the map
-- [ ] Import route from JSON file
-
-### 6. UI/UX Controls
-- [ ] Zoom controls
-- [ ] Undo last point
-- [ ] Clear path
-- [ ] Route naming
-
-### 7. Mobile Responsiveness
-- [x] Full-height responsive layout
-- [ ] Touch-friendly drawing controls
-- [ ] Tested across mobile browsers
-
-## Future (designed for, not yet implemented)
-
-- GPS track import (GPX / JSON)
-- Route comparison engine + accuracy scoring
-- Timeline playback of movement
-- Instructor dashboard (multiple users)
-
-> **Issue tracker note:** these epics/tasks are ready to be imported as
-> GitHub/GitLab issues once a remote is connected.
